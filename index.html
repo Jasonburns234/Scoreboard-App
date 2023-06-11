@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+    <div class = "Scoreboard">
+     <div class="boardsone">
+       <P class = "title">Home</P>
+       <div class="board">
+        <p class="homePoints" id="homePlusOne">0</p>
+       </div>
+       <div class="scorebtns">
+         <button onclick="homeOne()">+1</button>
+         <button id="homePlusTwo" onclick="homeTwo()">+2</button>
+         <button id="homePlusThree" onclick="homeThree()">+3</button>
+         <button id="homeminusOne" onclick="homeMinus()">-1</button>
+        </div>
+        <button id="GuestsClear" onclick="homeClear()">Clear</button>
+     </div>
+
+     <div class="boardsone">
+        <P class = "title">Guests</P>
+        <div class="board">
+         <p class="guestPoints" id="guestsPlusOne">0</p>
+        </div>
+        <div class="scorebtns">
+            <button onclick="guestsOne()">+1</button>
+            <button id="guestsPlusTwo" onclick="guestsTwo()">+2</button>
+            <button id="guestsPlusThree" onclick="guestsThree()">+3</button>
+            <button id="guestminusOne" onclick="guestMinus()">-1</button>
+         </div>
+         <button id="GuestsClear" onclick="guestsClear()">Clear</button> 
+
+      </div>
+    </div>  
+    <div class="totalResults">
+        <button class = "totalResultsBtn" onclick="Totals()">Results</button>
+        <p id="winner"></p>
+    </div> 
+        <script src="index.js" async defer></script>
+    </body>
+</html>
