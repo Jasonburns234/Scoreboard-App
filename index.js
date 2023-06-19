@@ -37,11 +37,13 @@ function guestsThree(){
 function homeClear(){
     document.getElementById("homePlusOne").innerText = 0;
     document.getElementById("winner").innerText = "";
+    counterOneHome = 0;
 }
 
 function guestsClear(){
     document.getElementById("guestsPlusOne").innerText = 0;
     document.getElementById("winner").innerText = "";
+    counterOneGuests = 0;
 }
 
 function Totals(){
